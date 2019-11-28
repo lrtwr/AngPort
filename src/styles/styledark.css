@@ -1,0 +1,89 @@
+html {
+  background-color: rgba(135, 137, 150, 0.959);
+}
+
+body {
+  background-color: none;
+  background-color: rgba(80, 69, 43, 0.973)!important;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(228, 225, 220);
+}
+
+.jl_header, .jl_footer {
+  border-radius: 20px 20px 0px 0px;
+  background-color: rgba(116, 93, 27, 0.986);
+}
+
+.jl_footer {
+  text-align: center;
+  height: 28px;
+}
+
+.jl_header_name {
+  font-size: x-small;
+}
+
+.jl_dark-text.jl_header_name, a, a:link, a:visited, .jl_brand,address a:link, address p {
+  color: rgba(194, 175, 173, 0.795);
+}
+
+a:hover {
+  color: beige;
+  font-weight: 500;
+}
+
+.jl_brand {
+  font-size: xx-large;
+}
+
+.nav-item {
+  border-style: ridge;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.nav-item:hover {
+  background-color: rgba(214, 193, 173, 0.959);
+  border-style: outset;
+  color: rgba(138, 138, 31, 0.973);
+}
+
+.back-colored {
+  background-color: rgba(216, 206, 194, 0.267);
+}
+
+.round-10 {
+  border-radius: 10px;
+}
+
+.rond-top-10 {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.round-bottom-10 {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.round-20 {
+  border-radius: 20px;
+}
+
+.rond-top-20 {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.round-bottom-20 {
+  border-radius: 0px 0px 20px 20px;
+}
+
+h6 {
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: rgba(56, 56, 10, 0.952);
+}
+
+address a:link, address p {
+  margin-top: -7px;
+  margin-bottom: -3px;
+}

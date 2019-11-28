@@ -1,0 +1,27 @@
+<div class="modal fade" id="cookieModal">
+  <div class="modal-dialog" id="cookie-modal-dialog">
+    <div class="modal-content" id="cookie-modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Cookies</h4>
+        <button type="button" class="close" (click)="discardCookies()">&times;</button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h5>Hier zijn de cookies weer.</h5>
+          <button type="button" (click)="acceptCookies()" class="btn btn-dark">Accepteren</button>
+          <br><br>
+          <button type="button" (click)="discardCookies()" class="btn btn-dark">Annuleren</button>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" (click)="discardCookies()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" (click)="delCookies()" class="btn btn-dark">Del Cookie</button>
+
+
+

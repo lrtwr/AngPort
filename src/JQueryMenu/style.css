@@ -1,0 +1,61 @@
+@media (min-width: 200px) and (max-width: 500px){
+    #mainmenu ul {
+        display:none;
+    }
+    #mainmenu select {
+        width:90%;
+        margin-top:10px;
+    }
+}
+@media (min-width: 500){
+    #mainmenu select {
+        display:none
+    }
+    #mainmenu ul {
+        margin-top:0%;
+    }
+}
+
+body {
+    background: #fff;
+    font-family:sans-serif;
+    margin: 0;
+}
+
+#mainmenu {
+    background:rgb(187, 72, 27);
+    height:40px;
+    text-align: center;
+}
+
+p {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+ul {
+    list-style:none;
+}
+
+ul li {
+    display: inline-block;
+    width: 80px;
+    text-align:center;
+}
+
+ul li a {
+    color:#fff;
+    width: 100%;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+ul li.selected {
+    background:#fff;
+}
+
+ul li.selected a {
+    color:#000;
+}
+

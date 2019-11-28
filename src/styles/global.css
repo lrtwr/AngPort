@@ -1,0 +1,23 @@
+@media (min-width: 200px) and (max-width: 500px) {
+}
+
+@media (min-width: 500) and (max-width: 800px) {
+}
+
+@media print {
+  .jl_header {
+    display: none;
+  }
+
+  .jl_footer {
+    background-color: none;
+  }
+}
+
+@media (min-width: 800px) {
+  body, .jl_header, .jl_footer {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,57 @@
+<a [routerLink]="['/hero', hero.id]"></a>
+<div class="container jl_header">
+  <nav class="navbar navbar-expand-sm mb-3">
+    <div class="container-fluid">
+      <div class="jl_brand">Portfolio</div>
+      <div>{{window.height + "  " + window.width}}</div>
+
+      <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <ul class="nav nav-pills nav-justified">
+          <li class="">
+            <span class="jl_header_name">Jeroen Leertouwer</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav style="margin-left:10px;" class="navbar col-sm-12">
+    <ul class="nav nav-tabs">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="wiebenik">Wie ben ik </a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link" (click)="appComponent.setLargeIframeModalUrl='JQueryMenu/index.html'">Externe site popup</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="iframe?url=JQueryMenu/about.html">About</a>
+      </li>
+
+
+      <li class="nav-item ">
+        <a class="nav-link Active" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <ul class="nav dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Presentation</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/iframe;{'url=JQuerymenu/about.html'}">Cookie</a>
+            <a class="dropdown-item" href="/Home/Email">Email</a>
+            <div role="separator" class="dropdown-divider"></div>
+          </div>
+        </ul>
+      </li>
+
+    </ul>
+    <div style="margin-right: 30px;" class="btn-group btn-group-toggle btn-group-sm btn-group-vertical">
+      <a type="button" style="padding:0;" (click)="makeLight()" style="color:black;"
+        class="btn btn-link btn-sm">Light</a>
+      <a type="button" style="padding:0;" (click)="makeDark()" style="color:beige;" class="btn btn-dark btn-sm">Dark</a>
+    </div>
+  </nav>
+</div>
