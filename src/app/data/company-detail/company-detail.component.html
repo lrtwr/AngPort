@@ -1,0 +1,33 @@
+<div  class="modal" id="company-modal">
+    <div class="company-modal-dialog modal-dialog">
+      <div class="company-modal-content modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Company: {{ model.companyName }} </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <form (ngSubmit)="onSubmit()" name="userform">
+
+            <div class="modal-body">
+
+                <h2>{{purpose + " " + model.companyName | uppercase }} Details</h2>
+                <div><span>id: </span>{{ model.companyId }}</div>
+                <div>
+                    <label>First Name:
+                        <input name="Company"   required [(ngModel)]="model.companyName" />
+                      </label>
+                      <label>Last Name:
+                          <input name="Branch"   required [(ngModel)]="model.branchName" />
+                        </label>
+                  </div>
+               </div>
+
+            <button type="submit" class="btn btn-success">{{ confirmText }}</button>
+          </form>
+      </div>
+    </div>
+  </div>
+

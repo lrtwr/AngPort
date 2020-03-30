@@ -10,14 +10,14 @@ declare var $: any;
   styleUrls: ['./iframe.component.css']
 })
 export class IframeComponent implements OnInit {
-  private iframeUrl: string;
+  public iframeUrl: string;
 
-  constructor( private route: ActivatedRoute ){
+  constructor( private route: ActivatedRoute ) {
     }
 
-ngOnInit(){
-this.iframeUrl=this.route.snapshot.queryParamMap.get("url");
-this.iframeUrl="" + this.iframeUrl;
+ngOnInit() {
+this.iframeUrl = this.route.snapshot.queryParamMap.get('url');
+this.iframeUrl = '' + this.iframeUrl;
 }
 }
 

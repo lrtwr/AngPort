@@ -1,0 +1,36 @@
+<div  class="modal" id="employee-modal">
+    <div class="employee-modal-dialog modal-dialog">
+      <div class="employee-modal-content modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Employee: {{ model.firstName + ' ' + model.lastName }} </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <form (ngSubmit)="onSubmit()" name="userform">
+
+            <div class="modal-body">
+
+                <h2>{{purpose + " " + model.firstName + ' ' + model.lastName | uppercase}} Details</h2>
+                <div><span>id: </span>{{model.id}}</div>
+                <div>
+                    <label>First Name:
+                        <input name="FirstName"   required [(ngModel)]="model.firstName" />
+                      </label>
+                      <label>Last Name:
+                          <input name="LastName"   required [(ngModel)]="model.lastName" />
+                        </label>
+                        <label>CompanyId:
+                            <input name="CompanyId"   required [(ngModel)]="model.companyId" />
+                          </label>
+                  </div>
+               </div>
+
+            <button type="submit" class="btn btn-success">{{ confirmText }}</button>
+          </form>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,30 @@
+
+<div  class="modal" id="branch-modal">
+  <div class="branch-modal-dialog modal-dialog">
+    <div class="branch-modal-content modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Branch: {{ model.branchName }} </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <form (ngSubmit)="onSubmit()" name="userform">
+
+          <div class="modal-body">
+
+              <h2>{{purpose + " " + model.branchName | uppercase}} Details</h2>
+              <div><span>id: </span>{{model.branchId}}</div>
+              <div>
+                <label>name:
+                  <input name="branchname"   required [(ngModel)]="model.branchName" />
+                </label>
+              </div>
+             </div>
+
+          <button type="submit" class="btn btn-success">{{ confirmText }}</button>
+        </form>
+    </div>
+  </div>
+</div>

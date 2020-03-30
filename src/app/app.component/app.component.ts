@@ -8,19 +8,18 @@ declare var $: any;
 })
 export class AppComponent implements OnInit {
   title = 'AngPort';
-  private largeIframeModalUrl: string;
+  largeIframeModalUrl = '';
 
-  ngOnInit(){
+  ngOnInit() { }
 
-  }
-  showModal(){
-    $(document).ready(function(){
-      $("#large-iframe-modal").modal("show");
+  showModal() {
+    $(document).ready( () => {
+      $('#large-iframe-modal').modal('show');
    });
   }
- public set setLargeIframeModalUrl(value:string)
-  {
-    this.largeIframeModalUrl=value;
+
+ public set setLargeIframeModalUrl(value: string) {
+    this.largeIframeModalUrl = value;
     this.showModal();
   }
 }

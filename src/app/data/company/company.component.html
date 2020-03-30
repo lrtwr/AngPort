@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+      <h3>Company</h3>
+    </div>
+    <div class = "col-sm-5">
+      <button type="button" (click)="CreateModel()" class="btn btn-success">New</button>
+    </div>
+    </div>
+    <table class="table table-condensed table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>CompanyName</th>
+          <th>BranchName</th>
+          <th>{{ models.length }} Companies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let model of models" (click)="editSelect(model)" >
+          <td>{{ model.companyId }}</td>
+          <td>{{ model.companyName }}</td>
+          <td>{{ model.branchName }}</td>
+          <td><button type="button" class="close" (click)="$event.cancelBubble=true;deleteModel(model)" data-dismiss="modal">&times;</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <app-company-detail [model]="selectedModel" [purpose]="selectedPurpose"></app-company-detail>
